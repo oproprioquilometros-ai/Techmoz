@@ -1,1 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Notícias, análises, comparações e informações sobre smartphones na TechMoz.">
+
+    <title>Smartphones | TechMoz</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #101827;
+            color: white;
+            padding: 18px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #19c37d;
+        }
+
+        nav {
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #19c37d;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #101827, #1b365d);
+            color: white;
+            text-align: center;
+            padding: 80px 6%;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 5vw, 60px);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            color: #d8e1ed;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 6%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: #101827;
+        }
+
+        .section-title p {
+            color: #667085;
+            margin-top: 10px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #101827;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #667085;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #19c37d;
+            color: #07121f;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 7px;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        .info-box {
+            background: white;
+            padding: 35px;
+            border-left: 5px solid #19c37d;
+            border-radius: 10px;
+            margin-top: 45px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .info-box h2 {
+            margin-bottom: 15px;
+        }
+
+        .info-box p {
+            color: #667085;
+        }
+
+        footer {
+            background: #080d16;
+            color: #9ba7b5;
+            text-align: center;
+            padding: 30px 6%;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 60px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">TECH<span>MOZ</span></div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#categorias">Categorias</a>
+            <a href="index.html#artigos">Artigos</a>
+            <a href="index.html#sobre">Sobre</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>📱 Smartphones</h1>
+
+        <p>
+            Análises, comparações e informações sobre os dispositivos
+            que estão a transformar a tecnologia móvel.
+        </p>
+    </section>
+
+    <main class="container">
+
+        <section class="section-title">
+            <h2>Explore o Mundo dos Smartphones</h2>
+
+            <p>
+                Descubra informações úteis antes de escolher o seu próximo dispositivo.
+            </p>
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <div class="icon">🔍</div>
+
+                <h3>Análises</h3>
+
+                <p>
+                    Conheça os principais recursos, desempenho, câmaras e bateria
+                    dos smartphones mais recentes.
+                </p>
+
+                <a href="#" class="button">Em breve</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚖️</div>
+
+                <h3>Comparações</h3>
+
+                <p>
+                    Compare diferentes dispositivos e descubra qual pode ser
+                    a melhor opção para as suas necessidades.
+                </p>
+
+                <a href="#" class="button">Em breve</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔋</div>
+
+                <h3>Bateria e Desempenho</h3>
+
+                <p>
+                    Aprenda a avaliar a duração da bateria, velocidade e
+                    desempenho de diferentes smartphones.
+                </p>
+
+                <a href="#" class="button">Em breve</a>
+            </div>
+
+        </section>
+
+        <section class="info-box">
+
+            <h2>O que analisar antes de comprar um smartphone?</h2>
+
+            <p>
+                Antes de comprar um novo dispositivo, é importante analisar
+                vários fatores, incluindo o desempenho do processador, a
+                qualidade da câmara, a duração da bateria, o armazenamento,
+                o sistema operativo e o preço.
+            </p>
+
+            <p>
+                Na TechMoz, vamos ajudar você a compreender melhor as
+                características dos smartphones e a tomar decisões mais
+                informadas.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer id="sobre">
+
+        <p>© 2026 TechMoz. Todos os direitos reservados.</p>
+
+        <p>O Futuro da Tecnologia Começa Aqui.</p>
+
+        <p>Fundador: M. Chande</p>
+
+    </footer>
+
+</body>
+</html>
