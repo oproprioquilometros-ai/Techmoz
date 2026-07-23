@@ -126,9 +126,9 @@
     }
 
     .categories {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 22px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
     }
 
     .category-card {
@@ -256,13 +256,13 @@
         font-size: 14px;
     }
 
-    @media (max-width: 700px) {
+@media (max-width: 900px) {
 
-        header {
-            justify-content: center;
-            text-align: center;
-        }
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
+}
         nav {
             justify-content: center;
         }
