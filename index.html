@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -7,350 +8,526 @@
     <meta name="author" content="TechMoz">
     <title>TechMoz — O Futuro da Tecnologia Começa Aqui</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f7fa;
-            color: #172033;
-            line-height: 1.6;
-        }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f5f7fa;
+        color: #172033;
+        line-height: 1.6;
+    }
 
+    header {
+        background: #101827;
+        color: white;
+        padding: 18px 6%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .logo span {
+        color: #19c37d;
+    }
+
+    nav {
+        display: flex;
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #19c37d;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #101827, #1b365d);
+        color: white;
+        padding: 90px 6%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 6vw, 72px);
+        margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+        color: #19c37d;
+    }
+
+    .hero p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 20px;
+        color: #d8e1ed;
+    }
+
+    .hero-button {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 14px 28px;
+        background: #19c37d;
+        color: #07121f;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .hero-button:hover {
+        transform: translateY(-3px);
+        opacity: 0.9;
+    }
+
+    .section {
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 6%;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+        margin-bottom: 8px;
+    }
+
+    .section-title p {
+        color: #687386;
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 22px;
+    }
+
+    .category-card {
+        display: block;
+        background: white;
+        padding: 28px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        transition: 0.3s;
+        border-top: 4px solid #19c37d;
+        text-decoration: none;
+        color: #172033;
+    }
+
+    .category-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .category-card .icon {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    .category-card h3 {
+        margin-bottom: 10px;
+    }
+
+    .category-card p {
+        color: #687386;
+        font-size: 15px;
+    }
+
+    .featured {
+        background: white;
+    }
+
+    .article-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 22px;
+    }
+
+    .article-card {
+        background: #f5f7fa;
+        border-radius: 12px;
+        padding: 24px;
+        border: 1px solid #e4e8ee;
+    }
+
+    .article-card h3 {
+        margin-bottom: 10px;
+    }
+
+    .article-card p {
+        color: #687386;
+        margin-bottom: 18px;
+    }
+
+    .read-more {
+        color: #0d8f5b;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* ÚLTIMAS NOTÍCIAS */
+
+    .news-section {
+        background: #f5f7fa;
+    }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 22px;
+    }
+
+    .news-card {
+        background: white;
+        padding: 26px;
+        border-radius: 12px;
+        border-left: 4px solid #19c37d;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        transition: 0.3s;
+    }
+
+    .news-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .news-category {
+        display: inline-block;
+        color: #0d8f5b;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 12px;
+    }
+
+    .news-card h3 {
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+
+    .news-card p {
+        color: #687386;
+        margin-bottom: 18px;
+    }
+
+    .news-card a {
+        color: #0d8f5b;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .newsletter {
+        background: #101827;
+        color: white;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .newsletter p {
+        margin: 12px auto 25px;
+        max-width: 600px;
+        color: #c8d1dd;
+    }
+
+    footer {
+        background: #080d16;
+        color: #9ba7b5;
+        text-align: center;
+        padding: 28px 6%;
+        font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
         header {
-            background: #101827;
-            color: white;
-            padding: 18px 6%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
-
-        .logo span {
-            color: #19c37d;
+            justify-content: center;
+            text-align: center;
         }
 
         nav {
-            display: flex;
-            gap: 22px;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 15px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #19c37d;
+            justify-content: center;
         }
 
         .hero {
-            background: linear-gradient(135deg, #101827, #1b365d);
-            color: white;
-            padding: 90px 6%;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: clamp(38px, 6vw, 72px);
-            margin-bottom: 18px;
-        }
-
-        .hero h1 span {
-            color: #19c37d;
+            padding: 65px 6%;
         }
 
         .hero p {
-            max-width: 700px;
-            margin: auto;
-            font-size: 20px;
-            color: #d8e1ed;
+            font-size: 17px;
         }
+    }
+</style>
+```
 
-        .hero-button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 14px 28px;
-            background: #19c37d;
-            color: #07121f;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        .hero-button:hover {
-            transform: translateY(-3px);
-            opacity: 0.9;
-        }
-
-        .section {
-            max-width: 1200px;
-            margin: auto;
-            padding: 60px 6%;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 35px;
-        }
-
-        .section-title h2 {
-            font-size: 34px;
-            margin-bottom: 8px;
-        }
-
-        .section-title p {
-            color: #687386;
-        }
-
-        .categories {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 22px;
-        }
-
-        .category-card {
-            background: white;
-            padding: 28px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-            transition: 0.3s;
-            border-top: 4px solid #19c37d;
-        }
-
-        .category-card:hover {
-            transform: translateY(-6px);
-        }
-
-        .category-card .icon {
-            font-size: 38px;
-            margin-bottom: 15px;
-        }
-
-        .category-card h3 {
-            margin-bottom: 10px;
-        }
-
-        .category-card p {
-            color: #687386;
-            font-size: 15px;
-        }
-
-        .featured {
-            background: white;
-        }
-
-        .article-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 22px;
-        }
-
-        .article-card {
-            background: #f5f7fa;
-            border-radius: 12px;
-            padding: 24px;
-            border: 1px solid #e4e8ee;
-        }
-
-        .article-card h3 {
-            margin-bottom: 10px;
-        }
-
-        .article-card p {
-            color: #687386;
-            margin-bottom: 18px;
-        }
-
-        .read-more {
-            color: #0d8f5b;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .newsletter {
-            background: #101827;
-            color: white;
-            text-align: center;
-            padding: 60px 6%;
-        }
-
-        .newsletter p {
-            margin: 12px auto 25px;
-            max-width: 600px;
-            color: #c8d1dd;
-        }
-
-        footer {
-            background: #080d16;
-            color: #9ba7b5;
-            text-align: center;
-            padding: 28px 6%;
-            font-size: 14px;
-        }
-
-        @media (max-width: 700px) {
-            header {
-                justify-content: center;
-                text-align: center;
-            }
-
-            nav {
-                justify-content: center;
-            }
-
-            .hero {
-                padding: 65px 6%;
-            }
-
-            .hero p {
-                font-size: 17px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">TECH<span>MOZ</span></div>
+```
+<header>
+    <div class="logo">TECH<span>MOZ</span></div>
 
-        <nav>
-            <a href="#">Início</a>
-            <a href="#categorias">Categorias</a>
-            <a href="#artigos">Artigos</a>
-            <a href="#sobre">Sobre</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#artigos">Artigos</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#sobre">Sobre</a>
+    </nav>
+</header>
 
-    <section class="hero">
-        <h1>O Futuro da Tecnologia <span>Começa Aqui</span></h1>
-
-        <p>
-            Tecnologia, Inteligência Artificial e Cibersegurança
-            para um mundo cada vez mais digital.
-        </p>
-
-        <a href="#categorias" class="hero-button">Explorar TechMoz</a>
-    </section>
-
-    <section class="section" id="categorias">
-        <div class="section-title">
-            <h2>Explore a Tecnologia</h2>
-            <p>Conhecimento e inovação para a era digital.</p>
-        </div>
-
-        <div class="categories">
-
-            <div class="category-card">
-                <div class="icon">🤖</div>
-                <h3>Inteligência Artificial</h3>
-                <p>
-                    Descubra ferramentas, novidades e aplicações práticas da IA.
-                </p>
-            </div>
-
-            <div class="category-card">
-                <div class="icon">🛡️</div>
-                <h3>Cibersegurança</h3>
-                <p>
-                    Aprenda a proteger os seus dados, dispositivos e contas online.
-                </p>
-            </div>
-
-            <div class="category-card">
-                <div class="icon">💻</div>
-                <h3>Tecnologia</h3>
-                <p>
-                    Notícias, tendências, software, hardware e inovação tecnológica.
-                </p>
-            </div>
-
-            <a href="smartphones.html" class="category-card">
-    <div class="icon">📱</div>
-
-    <h3>Smartphones</h3>
+<section class="hero">
+    <h1>O Futuro da Tecnologia <span>Começa Aqui</span></h1>
 
     <p>
-        Análises, comparações e informações sobre os dispositivos mais recentes.
+        Tecnologia, Inteligência Artificial e Cibersegurança
+        para um mundo cada vez mais digital.
     </p>
-</a>
 
-        </div>
-    </section>
+    <a href="#categorias" class="hero-button">Explorar TechMoz</a>
+</section>
 
-    <section class="section featured" id="artigos">
+<section class="section" id="categorias">
 
-        <div class="section-title">
-            <h2>Conteúdo em Destaque</h2>
-            <p>Em breve, os primeiros artigos da TechMoz.</p>
-        </div>
+    <div class="section-title">
+        <h2>Explore a Tecnologia</h2>
+        <p>Conhecimento e inovação para a era digital.</p>
+    </div>
 
-        <div class="article-grid">
+    <div class="categories">
 
-            <article class="article-card">
-                <h3>O que é Inteligência Artificial?</h3>
-                <p>
-                    Uma introdução simples ao mundo da Inteligência Artificial
-                    e às suas aplicações.
-                </p>
-                <a href="artigo-ia.html" class="read-more">Ler mais →</a>
-            </article>
+        <div class="category-card">
+            <div class="icon">🤖</div>
 
-            <article class="article-card">
-                <h3>Como proteger as suas contas online</h3>
-                <p>
-                    Conheça práticas importantes para melhorar a sua segurança digital.
-                </p>
-                <a href="artigo-ciberseguranca.html" class="read-more">Ler mais →</a>
-            </article>
+            <h3>Inteligência Artificial</h3>
 
-            <article class="article-card">
-                <h3>O futuro da tecnologia</h3>
-                <p>
-                    As tendências que estão a transformar a forma como vivemos e trabalhamos.
-                </p>
-                <a href="artigo-tecnologia.html" class="read-more">Ler mais →</a>
-            </article>
-
+            <p>
+                Descubra ferramentas, novidades e aplicações práticas da IA.
+            </p>
         </div>
 
-    </section>
+        <div class="category-card">
+            <div class="icon">🛡️</div>
 
-    <section class="newsletter">
+            <h3>Cibersegurança</h3>
 
-        <h2>Faça parte do futuro</h2>
+            <p>
+                Aprenda a proteger os seus dados, dispositivos e contas online.
+            </p>
+        </div>
+
+        <div class="category-card">
+            <div class="icon">💻</div>
+
+            <h3>Tecnologia</h3>
+
+            <p>
+                Notícias, tendências, software, hardware e inovação tecnológica.
+            </p>
+        </div>
+
+        <a href="smartphones.html" class="category-card">
+
+            <div class="icon">📱</div>
+
+            <h3>Smartphones</h3>
+
+            <p>
+                Análises, comparações e informações sobre os dispositivos mais recentes.
+            </p>
+
+        </a>
+
+    </div>
+
+</section>
+
+<section class="section featured" id="artigos">
+
+    <div class="section-title">
+        <h2>Conteúdo em Destaque</h2>
+        <p>Artigos e conteúdos selecionados pela TechMoz.</p>
+    </div>
+
+    <div class="article-grid">
+
+        <article class="article-card">
+
+            <h3>O que é Inteligência Artificial?</h3>
+
+            <p>
+                Uma introdução simples ao mundo da Inteligência Artificial
+                e às suas aplicações.
+            </p>
+
+            <a href="artigo-ia.html" class="read-more">
+                Ler mais →
+            </a>
+
+        </article>
+
+        <article class="article-card">
+
+            <h3>Como proteger as suas contas online</h3>
+
+            <p>
+                Conheça práticas importantes para melhorar a sua segurança digital.
+            </p>
+
+            <a href="artigo-ciberseguranca.html" class="read-more">
+                Ler mais →
+            </a>
+
+        </article>
+
+        <article class="article-card">
+
+            <h3>O futuro da tecnologia</h3>
+
+            <p>
+                As tendências que estão a transformar a forma como vivemos e trabalhamos.
+            </p>
+
+            <a href="artigo-tecnologia.html" class="read-more">
+                Ler mais →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section class="section news-section" id="noticias">
+
+    <div class="section-title">
+
+        <h2>📰 Últimas Notícias de Tecnologia</h2>
 
         <p>
-            A TechMoz está apenas a começar.
-            Em breve teremos notícias, análises, tutoriais e muito mais.
+            Acompanhe as principais novidades do mundo da tecnologia,
+            Inteligência Artificial, cibersegurança e inovação.
         </p>
 
-        <a href="#" class="hero-button">Em breve</a>
+    </div>
 
-    </section>
+    <div class="news-grid">
+
+        <article class="news-card">
+
+            <span class="news-category">
+                INTELIGÊNCIA ARTIFICIAL
+            </span>
+
+            <h3>
+                A Inteligência Artificial continua a transformar o mundo digital
+            </h3>
+
+            <p>
+                As novas ferramentas de IA estão a mudar a forma como as pessoas
+                trabalham, estudam e criam conteúdos.
+            </p>
+
+            <a href="artigo-ia.html">
+                Ler notícia →
+            </a>
+
+        </article>
+
+        <article class="news-card">
+
+            <span class="news-category">
+                CIBERSEGURANÇA
+            </span>
+
+            <h3>
+                A segurança digital tornou-se essencial para todos os utilizadores
+            </h3>
+
+            <p>
+                Proteger contas, dispositivos e dados pessoais é cada vez mais
+                importante no mundo conectado.
+            </p>
+
+            <a href="artigo-ciberseguranca.html">
+                Ler notícia →
+            </a>
+
+        </article>
+
+        <article class="news-card">
+
+            <span class="news-category">
+                TECNOLOGIA
+            </span>
+
+            <h3>
+                As novas tecnologias estão a transformar a vida moderna
+            </h3>
+
+            <p>
+                Da computação em nuvem à robótica, a inovação continua a criar
+                novas oportunidades.
+            </p>
+
+            <a href="artigo-tecnologia.html">
+                Ler notícia →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section class="newsletter">
+
+    <h2>Faça parte do futuro</h2>
+
+    <p>
+        A TechMoz está apenas a começar.
+        Em breve teremos notícias, análises, tutoriais e muito mais.
+    </p>
+
+    <a href="#" class="hero-button">
+        Em breve
+    </a>
+
+</section>
 
 <footer id="sobre">
+
     <p>© 2026 TechMoz. Todos os direitos reservados.</p>
+
     <p>O Futuro da Tecnologia Começa Aqui.</p>
+
     <p>Fundador: M. Chande</p>
+
 </footer>
+```
 
 </body>
 </html>
+
+
