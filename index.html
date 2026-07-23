@@ -127,9 +127,10 @@
 
     .categories {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 22px;
-    }
+    align-items: stretch;
+}
 
     .category-card {
         display: block;
