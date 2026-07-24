@@ -420,30 +420,37 @@ E substitui por este código:
 
     @media (max-width: 1000px) {
 
-        .categories {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    /* TELEMÓVEIS */
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-    @media (max-width: 600px) {
+}
 
-        .categories {
-            grid-template-columns: 1fr;
-        }
 
-        nav {
-            justify-content: center;
-        }
+@media (max-width: 600px) {
 
-        .hero {
-            padding: 65px 6%;
-        }
+    .categories {
+        grid-template-columns: 1fr;
+    }
 
-        .hero p {
-            font-size: 17px;
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+    .hero p {
+        font-size: 17px;
         }
 
     }
