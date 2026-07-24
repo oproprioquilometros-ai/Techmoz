@@ -27,6 +27,8 @@
         line-height: 1.6;
     }
 
+    /* HEADER */
+
     header {
         background: #101827;
         color: white;
@@ -64,6 +66,8 @@
     nav a:hover {
         color: #19c37d;
     }
+
+    /* HERO */
 
     .hero {
         background: linear-gradient(135deg, #101827, #1b365d);
@@ -105,11 +109,13 @@
         opacity: 0.9;
     }
 
+    /* SEÇÕES */
+
     .section {
-    max-width: 1200px;
-    margin: auto;
-    padding: 60px 3%;
-}
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 3%;
+    }
 
     .section-title {
         text-align: center;
@@ -125,56 +131,65 @@
         color: #687386;
     }
 
-.categories {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    align-items: stretch;
-}
+    /* CATEGORIAS */
+
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 20px;
+        align-items: stretch;
+    }
 
     .category-card {
-    display: block;
-    background: white;
-    padding: 28px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-    transition: 0.3s;
-    border-top: 4px solid #19c37d;
-    text-decoration: none;
-    color: #172033;
-    min-height: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        background: white;
+        padding: 28px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+        transition: 0.3s;
+        border-top: 4px solid #19c37d;
+        text-decoration: none;
+        color: #172033;
+        min-height: 230px;
     }
 
     .category-card:hover {
-    transform: translateY(-6px);
-}
-
-.category-card {
-    text-align: center;
-}
-
-.category-card .icon {
-    width: 75px;
-    height: 75px;
-    margin: 0 auto 18px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 38px;
-    background: #e8f8f1;
-    border-radius: 50%;
-}
-
-.category-card h3 {
-    margin-bottom: 10px;
-}
-
-.category-card p {
-    color: #687386;
-    font-size: 15px;
+        transform: translateY(-6px);
     }
+
+    .category-card .icon {
+        width: 75px;
+        height: 75px;
+
+        margin: 0 auto 18px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 38px;
+        background: #e8f8f1;
+        border-radius: 50%;
+    }
+
+    .category-card h3 {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .category-card p {
+        max-width: 230px;
+        color: #687386;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* DESTAQUES */
 
     .featured {
         background: white;
@@ -209,6 +224,8 @@
         font-weight: bold;
     }
 
+    /* NOTÍCIAS */
+
     .news-section {
         background: #f5f7fa;
     }
@@ -218,7 +235,7 @@
         padding: 26px;
         border-radius: 12px;
         border-left: 4px solid #19c37d;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
         transition: 0.3s;
     }
 
@@ -250,6 +267,8 @@
         font-weight: bold;
     }
 
+    /* NEWSLETTER */
+
     .newsletter {
         background: #101827;
         color: white;
@@ -263,6 +282,8 @@
         color: #c8d1dd;
     }
 
+    /* FOOTER */
+
     footer {
         background: #080d16;
         color: #9ba7b5;
@@ -271,12 +292,24 @@
         font-size: 14px;
     }
 
-@media (max-width: 600px) {
-    .categories {
-        grid-template-columns: 1fr;
+    /* TABLETS */
+
+    @media (max-width: 1000px) {
+
+        .categories {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
     }
 
-}
+    /* TELEMÓVEIS */
+
+    @media (max-width: 600px) {
+
+        .categories {
+            grid-template-columns: 1fr;
+        }
+
         nav {
             justify-content: center;
         }
@@ -299,6 +332,8 @@
 <body>
 
 ```
+<!-- HEADER -->
+
 <header>
 
     <div class="logo">
@@ -330,6 +365,8 @@
 </header>
 
 
+<!-- HERO -->
+
 <section class="hero">
 
     <h1>
@@ -349,6 +386,8 @@
 </section>
 
 
+<!-- CATEGORIAS -->
+
 <section class="section" id="categorias">
 
     <div class="section-title">
@@ -361,59 +400,61 @@
             Conhecimento e inovação para a era digital.
         </p>
 
-  </div>
+    </div>
 
 
     <div class="categories">
 
+
         <a href="noticia-ia.html" class="category-card">
-    <div class="icon">
-        🤖
-    </div>
 
-    <h3>
-        Inteligência Artificial
-    </h3>
+            <div class="icon">
+                🤖
+            </div>
 
-    <p>
-        Descubra ferramentas, novidades e aplicações práticas da IA.
-    </p>
+            <h3>
+                Inteligência Artificial
+            </h3>
 
-</a>
+            <p>
+                Descubra ferramentas, novidades e aplicações práticas da IA.
+            </p>
 
-
-<a href="artigo-ciberseguranca.html" class="category-card">
-
-    <div class="icon">
-        🛡️
-    </div>
-
-    <h3>
-        Cibersegurança
-    </h3>
-
-    <p>
-        Aprenda a proteger os seus dados, dispositivos e contas online.
-    </p>
-
-</a>
+        </a>
 
 
- <a href="artigo-tecnologia.html" class="category-card">
+        <a href="artigo-ciberseguranca.html" class="category-card">
 
-    <div class="icon">
-        💻
-    </div>
+            <div class="icon">
+                🛡️
+            </div>
 
-    <h3>
-        Tecnologia
-    </h3>
+            <h3>
+                Cibersegurança
+            </h3>
 
-    <p>
-        Notícias, tendências, software, hardware e inovação tecnológica.
-    </p>
+            <p>
+                Aprenda a proteger os seus dados, dispositivos e contas online.
+            </p>
 
-</a>
+        </a>
+
+
+        <a href="artigo-tecnologia.html" class="category-card">
+
+            <div class="icon">
+                💻
+            </div>
+
+            <h3>
+                Tecnologia
+            </h3>
+
+            <p>
+                Notícias, tendências, software, hardware e inovação tecnológica.
+            </p>
+
+        </a>
 
 
         <a href="smartphones.html" class="category-card">
@@ -437,6 +478,8 @@
 
 </section>
 
+
+<!-- CONTEÚDO EM DESTAQUE -->
 
 <section class="section featured" id="artigos">
 
@@ -512,6 +555,8 @@
 
 </section>
 
+
+<!-- NOTÍCIAS -->
 
 <section class="section news-section" id="noticias">
 
@@ -604,6 +649,8 @@
 </section>
 
 
+<!-- NEWSLETTER -->
+
 <section class="newsletter">
 
     <h2>
@@ -621,6 +668,8 @@
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer id="sobre">
 
