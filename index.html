@@ -687,42 +687,111 @@
        MOBILE
     ========================= */
 
-    @media (max-width: 700px) {
+   @media (max-width: 700px) {
 
-        header {
-            flex-wrap: wrap;
-        }
-
-
-        .menu-toggle {
-            display: block;
-        }
+    header {
+        padding: 16px 6%;
+    }
 
 
-        nav {
-            display: none;
+    .menu-toggle {
+        display: block;
 
-            width: 100%;
+        width: 44px;
+        height: 44px;
 
-            flex-direction: column;
+        background: #19c37d;
 
-            gap: 0;
+        color: #07121f;
 
-            margin-top: 15px;
+        border: none;
 
-            background: #0b1220;
-        }
+        border-radius: 8px;
+
+        font-size: 25px;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+    }
 
 
-        nav.active {
-            display: flex;
-        }
+    .menu-toggle:hover {
+        transform: scale(1.05);
+    }
 
 
-        nav a {
-            padding: 14px 0;
+    nav {
+        display: none;
 
-            border-bottom: 1px solid #1e2a3c;
+        width: 100%;
+
+        margin-top: 15px;
+
+        padding: 8px 0;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        background: #0b1220;
+
+        border-radius: 10px;
+
+        overflow: hidden;
+
+        box-shadow:
+            0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+
+
+    nav.active {
+        display: flex;
+    }
+
+
+    nav a {
+        padding: 14px 20px;
+
+        border-bottom: 1px solid #1e2a3c;
+
+        transition: 0.3s;
+    }
+
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+
+    nav a:hover {
+        background: #16243a;
+
+        color: #19c37d;
+
+        padding-left: 26px;
+    }
+
+
+    .categories,
+    .article-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+    .section-title h2 {
+        font-size: 28px;
         }
 
 
@@ -766,9 +835,15 @@
     </div>
 
 
-    <button class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </button>
+    <button
+    class="menu-toggle"
+    id="menu-button"
+    onclick="toggleMenu()"
+    aria-label="Abrir menu">
+
+    ☰
+
+</button>
 
 
     <nav id="main-nav">
