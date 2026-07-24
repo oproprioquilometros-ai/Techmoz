@@ -1283,13 +1283,36 @@
 
 <script>
 
-    function toggleMenu() {
+  function toggleMenu() {
 
-        const nav = document.getElementById("main-nav");
+    const nav = document.getElementById("main-nav");
 
-        nav.classList.toggle("active");
+    const button = document.getElementById("menu-button");
+
+    nav.classList.toggle("active");
+
+
+    if (nav.classList.contains("active")) {
+
+        button.innerHTML = "✕";
+
+        button.setAttribute(
+            "aria-label",
+            "Fechar menu"
+        );
+
+    } else {
+
+        button.innerHTML = "☰";
+
+        button.setAttribute(
+            "aria-label",
+            "Abrir menu"
+        );
 
     }
+
+}
 
 </script>
 ```
