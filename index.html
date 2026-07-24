@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 
 <html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 ```
-<meta name="description" content="TechMoz - Tecnologia, Inteligência Artificial e Cibersegurança. O Futuro da Tecnologia Começa Aqui.">
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+    content="TechMoz - Tecnologia, Inteligência Artificial, Cibersegurança, Smartphones e inovação digital.">
 
 <meta name="author" content="TechMoz">
 
 <title>TechMoz — O Futuro da Tecnologia Começa Aqui</title>
 
+
 <style>
+
+    /* =========================
+       RESET
+    ========================= */
 
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
+
+
+    /* =========================
+       BASE
+    ========================= */
 
     body {
         font-family: Arial, Helvetica, sans-serif;
@@ -27,18 +41,23 @@
         line-height: 1.6;
     }
 
-    /* HEADER */
+
+    /* =========================
+       HEADER
+    ========================= */
 
     header {
         background: #101827;
         color: white;
         padding: 18px 6%;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 15px;
+
+        position: relative;
     }
+
 
     .logo {
         font-size: 28px;
@@ -46,15 +65,17 @@
         letter-spacing: 1px;
     }
 
+
     .logo span {
         color: #19c37d;
     }
 
+
     nav {
         display: flex;
         gap: 22px;
-        flex-wrap: wrap;
     }
+
 
     nav a {
         color: white;
@@ -63,394 +84,666 @@
         transition: 0.3s;
     }
 
+
     nav a:hover {
         color: #19c37d;
     }
 
-    /* HERO */
+
+    /* BOTÃO DO MENU MOBILE */
+
+    .menu-toggle {
+        display: none;
+
+        background: none;
+        border: none;
+
+        color: white;
+        font-size: 28px;
+
+        cursor: pointer;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
-        background: linear-gradient(135deg, #101827, #1b365d);
+        background:
+            linear-gradient(
+                135deg,
+                rgba(16, 24, 39, 0.98),
+                rgba(27, 54, 93, 0.95)
+            );
+
         color: white;
         padding: 90px 6%;
         text-align: center;
     }
+
 
     .hero h1 {
         font-size: clamp(38px, 6vw, 72px);
         margin-bottom: 18px;
     }
 
+
     .hero h1 span {
         color: #19c37d;
     }
 
+
     .hero p {
         max-width: 700px;
         margin: auto;
+
         font-size: 20px;
         color: #d8e1ed;
     }
 
+
     .hero-button {
         display: inline-block;
+
         margin-top: 30px;
         padding: 14px 28px;
+
         background: #19c37d;
         color: #07121f;
+
         text-decoration: none;
         font-weight: bold;
+
         border-radius: 8px;
-        transition: 0.3s;
+
+        transition: all 0.3s ease;
     }
+
 
     .hero-button:hover {
         transform: translateY(-3px);
-        opacity: 0.9;
+        box-shadow: 0 8px 20px rgba(25, 195, 125, 0.25);
     }
 
-    /* SEÇÕES */
+
+    /* =========================
+       SEÇÕES
+    ========================= */
 
     .section {
         max-width: 1200px;
         margin: auto;
-        padding: 60px 3%;
+        padding: 70px 3%;
     }
+
 
     .section-title {
         text-align: center;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
     }
+
 
     .section-title h2 {
         font-size: 34px;
         margin-bottom: 8px;
     }
 
+
     .section-title p {
         color: #687386;
     }
 
-    /* CATEGORIAS */
+
+    /* =========================
+       CATEGORIAS
+    ========================= */
 
     .categories {
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
+
         gap: 20px;
-        align-items: stretch;
     }
+
 
     .category-card {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         text-align: center;
 
         background: white;
+
         padding: 28px;
+
         border-radius: 12px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-        transition: 0.3s;
+
+        box-shadow:
+            0 5px 20px rgba(0, 0, 0, 0.06);
+
         border-top: 4px solid #19c37d;
+
         text-decoration: none;
         color: #172033;
+
         min-height: 230px;
+
+        transition: all 0.3s ease;
     }
 
+
     .category-card:hover {
-        transform: translateY(-6px);
+        transform: translateY(-7px);
+
+        box-shadow:
+            0 14px 30px rgba(0, 0, 0, 0.12);
     }
+
 
     .category-card .icon {
         width: 75px;
         height: 75px;
 
-        margin: 0 auto 18px;
+        margin-bottom: 18px;
 
         display: flex;
         align-items: center;
         justify-content: center;
 
         font-size: 38px;
+
         background: #e8f8f1;
+
         border-radius: 50%;
     }
 
+
     .category-card h3 {
-        width: 100%;
         margin-bottom: 10px;
-        text-align: center;
     }
+
 
     .category-card p {
         max-width: 230px;
+
         color: #687386;
+
         font-size: 15px;
-        text-align: center;
     }
 
-    /* DESTAQUES */
+
+    /* =========================
+       CONTEÚDO EM DESTAQUE
+    ========================= */
 
     .featured {
-        background: white;
+        background: #101827;
+
+        max-width: none;
+
+        padding-left: 6%;
+        padding-right: 6%;
     }
 
-    .article-grid,
-    .news-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 22px;
+
+    .featured .section-title h2 {
+        color: white;
     }
+
+
+    .featured .section-title p {
+        color: #aeb9c8;
+    }
+
+
+    .article-grid {
+        max-width: 1200px;
+        margin: auto;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 24px;
+    }
+
 
     .article-card {
-        background: #f5f7fa;
-        border-radius: 12px;
-        padding: 24px;
-        border: 1px solid #e4e8ee;
+        position: relative;
+
+        background:
+            linear-gradient(
+                145deg,
+                #1b2a40,
+                #101827
+            );
+
+        padding: 28px;
+
+        border-radius: 16px;
+
+        border: 1px solid #2e4058;
+
+        overflow: hidden;
+
+        transition: all 0.3s ease;
     }
 
-    .article-card h3 {
-        margin-bottom: 10px;
+
+    .article-card::before {
+        content: "";
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 4px;
+
+        background: #19c37d;
     }
 
-    .article-card p {
-        color: #687386;
+
+    .article-card:hover {
+        transform: translateY(-8px);
+
+        border-color: #19c37d;
+
+        box-shadow:
+            0 15px 35px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .article-icon {
+        font-size: 36px;
         margin-bottom: 18px;
     }
 
-    .read-more {
-        color: #0d8f5b;
-        text-decoration: none;
-        font-weight: bold;
+
+    .article-card h3 {
+        color: white;
+
+        font-size: 21px;
+
+        margin-bottom: 12px;
     }
 
-    /* NOTÍCIAS */
+
+    .article-card p {
+        color: #b7c2d0;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        margin-bottom: 22px;
+    }
+
+
+    .read-more {
+        color: #19c37d;
+
+        text-decoration: none;
+
+        font-weight: bold;
+
+        transition: all 0.3s ease;
+    }
+
+
+    .read-more:hover {
+        letter-spacing: 0.5px;
+    }
+
+
+    /* =========================
+       NOTÍCIAS
+    ========================= */
 
     .news-section {
         background: #f5f7fa;
     }
 
-    .news-card {
-    background: white;
-    padding: 26px;
-    border-radius: 12px;
-    border-left: 4px solid #19c37d;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-    transition: 0.3s;
-}
 
-.news-card:hover {
-    transform: translateY(-5px);
-}
+    .news-grid {
+        display: grid;
 
-E substitui por este código:
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
 
-/* NOTÍCIAS */
-
-.news-section {
-    background: #f5f7fa;
-}
-
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-
-.news-card {
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.news-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-}
-
-/* ÁREA DA IMAGEM */
-
-.news-image {
-    height: 190px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-/* IMAGENS DAS NOTÍCIAS */
-
-.news-image.smartphone {
-    background-image: url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80");
-}
-
-.news-image.ia {
-    background-image: url("https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80");
-}
-
-.news-image.security {
-    background-image: url("https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80");
-}
-
-/* CONTEÚDO */
-
-.news-content {
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-/* ETIQUETA DA CATEGORIA */
-
-.news-category {
-    display: inline-block;
-    width: fit-content;
-    background: #e8f8f1;
-    color: #0d8f5b;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    margin-bottom: 12px;
-}
-
-/* DATA */
-
-.news-date {
-    color: #8993a3;
-    font-size: 13px;
-    margin-bottom: 12px;
-}
-
-/* TÍTULO */
-
-.news-card h3 {
-    font-size: 21px;
-    line-height: 1.35;
-    margin-bottom: 12px;
-    color: #172033;
-}
-
-/* RESUMO */
-
-.news-card p {
-    color: #687386;
-    font-size: 15px;
-    line-height: 1.7;
-    margin-bottom: 22px;
-}
-
-/* BOTÃO */
-
-.news-card a {
-    margin-top: auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    width: fit-content;
-
-    color: #0d8f5b;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-
-    transition: all 0.3s ease;
-}
-
-.news-card a:hover {
-    gap: 12px;
-    color: #087247;
+        gap: 24px;
     }
+
+
+    .news-card {
+        background: white;
+
+        border-radius: 16px;
+
+        overflow: hidden;
+
+        box-shadow:
+            0 8px 25px rgba(0, 0, 0, 0.07);
+
+        display: flex;
+        flex-direction: column;
+
+        transition: all 0.3s ease;
+    }
+
+
+    .news-card:hover {
+        transform: translateY(-8px);
+
+        box-shadow:
+            0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+
+
+    .news-image {
+        height: 190px;
+
+        background-size: cover;
+        background-position: center;
+
+        position: relative;
+    }
+
+
+    .news-image::after {
+        content: "";
+
+        position: absolute;
+
+        inset: 0;
+
+        background:
+            linear-gradient(
+                to top,
+                rgba(16, 24, 39, 0.65),
+                transparent
+            );
+    }
+
+
+    .news-image.smartphone {
+        background-image:
+            url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80");
+    }
+
+
+    .news-image.ia {
+        background-image:
+            url("https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80");
+    }
+
+
+    .news-image.security {
+        background-image:
+            url("https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80");
+    }
+
+
+    .news-content {
+        padding: 24px;
+
+        display: flex;
+        flex-direction: column;
+
+        flex: 1;
+    }
+
 
     .news-category {
         display: inline-block;
+
+        width: fit-content;
+
+        background: #e8f8f1;
+
         color: #0d8f5b;
-        font-size: 12px;
+
+        padding: 6px 12px;
+
+        border-radius: 20px;
+
+        font-size: 11px;
+
         font-weight: bold;
+
+        letter-spacing: 0.5px;
+
         margin-bottom: 12px;
     }
 
-    .news-card h3 {
+
+    .news-date {
+        color: #8993a3;
+
+        font-size: 13px;
+
         margin-bottom: 12px;
-        font-size: 20px;
     }
+
+
+    .news-card h3 {
+        font-size: 21px;
+
+        line-height: 1.35;
+
+        margin-bottom: 12px;
+    }
+
 
     .news-card p {
         color: #687386;
-        margin-bottom: 18px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        margin-bottom: 22px;
     }
+
 
     .news-card a {
+        margin-top: auto;
+
+        display: inline-flex;
+
+        align-items: center;
+
+        gap: 6px;
+
+        width: fit-content;
+
         color: #0d8f5b;
+
         text-decoration: none;
+
         font-weight: bold;
+
+        transition: all 0.3s ease;
     }
 
-    /* NEWSLETTER */
+
+    .news-card a:hover {
+        gap: 12px;
+
+        color: #087247;
+    }
+
+
+    /* =========================
+       NEWSLETTER
+    ========================= */
 
     .newsletter {
-        background: #101827;
+        background:
+            linear-gradient(
+                135deg,
+                #101827,
+                #1b365d
+            );
+
         color: white;
+
         text-align: center;
-        padding: 60px 6%;
+
+        padding: 70px 6%;
     }
+
+
+    .newsletter h2 {
+        font-size: 34px;
+
+        margin-bottom: 12px;
+    }
+
 
     .newsletter p {
-        margin: 12px auto 25px;
-        max-width: 600px;
+        max-width: 650px;
+
+        margin: auto;
+
         color: #c8d1dd;
+
+        font-size: 17px;
     }
 
-    /* FOOTER */
+
+    .newsletter-button {
+        display: inline-block;
+
+        margin-top: 28px;
+
+        padding: 13px 26px;
+
+        border: 1px solid #19c37d;
+
+        border-radius: 8px;
+
+        color: #19c37d;
+
+        text-decoration: none;
+
+        font-weight: bold;
+
+        transition: all 0.3s ease;
+    }
+
+
+    .newsletter-button:hover {
+        background: #19c37d;
+
+        color: #07121f;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
         background: #080d16;
+
         color: #9ba7b5;
+
         text-align: center;
+
         padding: 28px 6%;
+
         font-size: 14px;
     }
 
-    /* TABLETS */
+
+    /* =========================
+       TABLET
+    ========================= */
 
     @media (max-width: 1000px) {
 
-    .categories {
-        grid-template-columns: repeat(2, 1fr);
+        .categories {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+
+        .article-grid,
+        .news-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
     }
 
-    .news-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-}
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 700px) {
+
+        header {
+            flex-wrap: wrap;
+        }
 
 
-@media (max-width: 600px) {
+        .menu-toggle {
+            display: block;
+        }
 
-    .categories {
-        grid-template-columns: 1fr;
-    }
 
-    .news-grid {
-        grid-template-columns: 1fr;
-    }
+        nav {
+            display: none;
 
-    nav {
-        justify-content: center;
-    }
+            width: 100%;
 
-    .hero {
-        padding: 65px 6%;
-    }
+            flex-direction: column;
 
-    .hero p {
-        font-size: 17px;
+            gap: 0;
+
+            margin-top: 15px;
+
+            background: #0b1220;
+        }
+
+
+        nav.active {
+            display: flex;
+        }
+
+
+        nav a {
+            padding: 14px 0;
+
+            border-bottom: 1px solid #1e2a3c;
+        }
+
+
+        .categories,
+        .article-grid,
+        .news-grid {
+            grid-template-columns: 1fr;
+        }
+
+
+        .hero {
+            padding: 65px 6%;
+        }
+
+
+        .hero p {
+            font-size: 17px;
+        }
+
+
+        .section-title h2 {
+            font-size: 28px;
         }
 
     }
@@ -471,9 +764,17 @@ E substitui por este código:
         TECH<span>MOZ</span>
     </div>
 
-    <nav>
 
-        <a href="#">Início</a>
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+
+    <nav id="main-nav">
+
+        <a href="#">
+            Início
+        </a>
 
         <a href="#categorias">
             Categorias
@@ -505,10 +806,12 @@ E substitui por este código:
         <span>Começa Aqui</span>
     </h1>
 
+
     <p>
         Tecnologia, Inteligência Artificial e Cibersegurança
         para um mundo cada vez mais digital.
     </p>
+
 
     <a href="#categorias" class="hero-button">
         Explorar TechMoz
@@ -527,6 +830,7 @@ E substitui por este código:
             Explore a Tecnologia
         </h2>
 
+
         <p>
             Conhecimento e inovação para a era digital.
         </p>
@@ -543,9 +847,11 @@ E substitui por este código:
                 🤖
             </div>
 
+
             <h3>
                 Inteligência Artificial
             </h3>
+
 
             <p>
                 Descubra ferramentas, novidades e aplicações práticas da IA.
@@ -560,9 +866,11 @@ E substitui por este código:
                 🛡️
             </div>
 
+
             <h3>
                 Cibersegurança
             </h3>
+
 
             <p>
                 Aprenda a proteger os seus dados, dispositivos e contas online.
@@ -577,9 +885,11 @@ E substitui por este código:
                 💻
             </div>
 
+
             <h3>
                 Tecnologia
             </h3>
+
 
             <p>
                 Notícias, tendências, software, hardware e inovação tecnológica.
@@ -594,9 +904,11 @@ E substitui por este código:
                 📱
             </div>
 
+
             <h3>
                 Smartphones
             </h3>
+
 
             <p>
                 Análises, comparações e informações sobre os dispositivos mais recentes.
@@ -620,6 +932,7 @@ E substitui por este código:
             Conteúdo em Destaque
         </h2>
 
+
         <p>
             Artigos e conteúdos selecionados pela TechMoz.
         </p>
@@ -632,34 +945,48 @@ E substitui por este código:
 
         <article class="article-card">
 
+            <div class="article-icon">
+                🤖
+            </div>
+
+
             <h3>
                 O que é Inteligência Artificial?
             </h3>
+
 
             <p>
                 Uma introdução simples ao mundo da Inteligência Artificial
                 e às suas aplicações.
             </p>
 
+
             <a href="artigo-ia.html" class="read-more">
-                Ler mais →
+                Ler artigo →
             </a>
 
         </article>
 
 
         <article class="article-card">
+
+            <div class="article-icon">
+                🛡️
+            </div>
+
 
             <h3>
                 Como proteger as suas contas online
             </h3>
 
+
             <p>
                 Conheça práticas importantes para melhorar a sua segurança digital.
             </p>
 
+
             <a href="artigo-ciberseguranca.html" class="read-more">
-                Ler mais →
+                Ler artigo →
             </a>
 
         </article>
@@ -667,16 +994,23 @@ E substitui por este código:
 
         <article class="article-card">
 
+            <div class="article-icon">
+                💻
+            </div>
+
+
             <h3>
                 O futuro da tecnologia
             </h3>
+
 
             <p>
                 As tendências que estão a transformar a forma como vivemos e trabalhamos.
             </p>
 
+
             <a href="artigo-tecnologia.html" class="read-more">
-                Ler mais →
+                Ler artigo →
             </a>
 
         </article>
@@ -697,6 +1031,7 @@ E substitui por este código:
             📰 Últimas Notícias de Tecnologia
         </h2>
 
+
         <p>
             Acompanhe as principais novidades do mundo da tecnologia,
             Inteligência Artificial, cibersegurança e inovação.
@@ -708,11 +1043,10 @@ E substitui por este código:
     <div class="news-grid">
 
 
-        <!-- NOTÍCIA 1 -->
-
         <article class="news-card">
 
             <div class="news-image smartphone"></div>
+
 
             <div class="news-content">
 
@@ -720,19 +1054,23 @@ E substitui por este código:
                     SMARTPHONES
                 </span>
 
+
                 <div class="news-date">
                     📅 24 Julho 2026
                 </div>
 
+
                 <h3>
                     O que observar antes de comprar um novo smartphone
                 </h3>
+
 
                 <p>
                     Desempenho, bateria, câmaras e armazenamento são alguns dos
                     principais fatores que devem ser analisados antes de escolher
                     um novo dispositivo.
                 </p>
+
 
                 <a href="noticia-smartphones.html">
                     Ler notícia →
@@ -743,11 +1081,10 @@ E substitui por este código:
         </article>
 
 
-        <!-- NOTÍCIA 2 -->
-
         <article class="news-card">
 
             <div class="news-image ia"></div>
+
 
             <div class="news-content">
 
@@ -755,18 +1092,22 @@ E substitui por este código:
                     INTELIGÊNCIA ARTIFICIAL
                 </span>
 
+
                 <div class="news-date">
                     📅 24 Julho 2026
                 </div>
+
 
                 <h3>
                     A Inteligência Artificial está a transformar a forma como trabalhamos
                 </h3>
 
+
                 <p>
                     As ferramentas de IA estão a criar novas possibilidades para
                     estudantes, profissionais, empresas e criadores de conteúdo.
                 </p>
+
 
                 <a href="noticia-ia.html">
                     Ler notícia →
@@ -777,11 +1118,10 @@ E substitui por este código:
         </article>
 
 
-        <!-- NOTÍCIA 3 -->
-
         <article class="news-card">
 
             <div class="news-image security"></div>
+
 
             <div class="news-content">
 
@@ -789,18 +1129,22 @@ E substitui por este código:
                     CIBERSEGURANÇA
                 </span>
 
+
                 <div class="news-date">
                     📅 24 Julho 2026
                 </div>
+
 
                 <h3>
                     A proteção dos dados tornou-se uma prioridade no mundo digital
                 </h3>
 
+
                 <p>
                     Senhas fortes, autenticação de dois fatores e atenção contra
                     fraudes são importantes para proteger as contas online.
                 </p>
+
 
                 <a href="artigo-ciberseguranca.html">
                     Ler notícia →
@@ -824,13 +1168,15 @@ E substitui por este código:
         Faça parte do futuro
     </h2>
 
+
     <p>
         A TechMoz está apenas a começar.
         Em breve teremos notícias, análises, tutoriais e muito mais.
     </p>
 
-    <a href="#" class="hero-button">
-        Em breve
+
+    <a href="#noticias" class="newsletter-button">
+        Explorar novidades →
     </a>
 
 </section>
@@ -844,17 +1190,35 @@ E substitui por este código:
         © 2026 TechMoz. Todos os direitos reservados.
     </p>
 
+
     <p>
         O Futuro da Tecnologia Começa Aqui.
     </p>
+
 
     <p>
         Fundador: M. Chande
     </p>
 
 </footer>
+
+
+<!-- MENU MOBILE -->
+
+<script>
+
+    function toggleMenu() {
+
+        const nav = document.getElementById("main-nav");
+
+        nav.classList.toggle("active");
+
+    }
+
+</script>
 ```
 
 </body>
+
 </html>
 
