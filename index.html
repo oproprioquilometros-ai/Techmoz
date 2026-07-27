@@ -252,15 +252,24 @@ nav a:hover::after {
 }
 
 .category-card .icon {
-    width: 68px;
-    height: 68px;
+    width: 100%;
+    height: 150px;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(160deg, #e8f8f1, #d3f0e2);
-    border-radius: 18px;
-    transition: transform 0.3s ease, background 0.3s ease;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #e8f8f1;
+}
+
+.category-card .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.category-card:hover .icon img {
+    transform: scale(1.08);
 }
 
 .category-card .icon svg {
