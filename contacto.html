@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Entre em contacto com a equipa da TechMoz para parcerias, sugestões ou dúvidas.">
+<meta name="description" content="Na TechMoz, valorizamos a sua opinião e estamos sempre disponíveis para o ajudar. Se tiver dúvidas, sugestões, parcerias ou precisar de suporte, não h...">
 <meta name="author" content="TechMoz">
 <title>Contacto — TechMoz</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
     <a href="index.html" class="logo">
         <span class="logo-mark" aria-hidden="true">
@@ -41,37 +40,53 @@
     </button>
 </header>
 
-<div class="breadcrumb"><a href="index.html">Início</a> / Contacto</div>
+<div class="breadcrumb"><a href="index.html">Início</a> / <a href="contacto.html">Contacto</a> / Contacto</div>
 
-<div class="contact-wrap">
-    <div class="contact-info">
-        <h1>Fale connosco</h1>
-        <p>Tem uma sugestão de artigo, uma proposta de parceria ou encontrou algum erro numa página? Escreva-nos — respondemos assim que possível.</p>
-        <ul>
-            <li>📧 geral@techmoz.co.mz</li>
-            <li>📍 Maputo, Moçambique</li>
-            <li>🕒 Resposta em 1 a 3 dias úteis</li>
-        </ul>
+<section class="article-page-hero">
+    <h1 id="article-title">Contacto</h1>
+    <p id="article-description">Na TechMoz, valorizamos a sua opinião e estamos sempre disponíveis para o ajudar. Se tiver dúvidas, sugestões, parcerias ou precisar de suporte, não h...</p>
+    <div class="article-meta">
+        <span id="article-author">Por TechMoz</span>
+        28 de July de 2026
     </div>
+</section>
 
-    <form class="contact-form" action="mailto:geral@techmoz.co.mz" method="post" enctype="text/plain">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" required>
+<section class="section article-content">
+    <div id="article-body">
+        <h1>Contacto</h1>
+<h2>Fale Connosco</h2>
+<p>Na TechMoz, valorizamos a sua opinião e estamos sempre disponíveis para o ajudar. Se tiver dúvidas, sugestões, parcerias ou precisar de suporte, não hesite em contactar-nos. A sua interação é fundamental para continuarmos a melhorar e a oferecer o melhor conteúdo possível.</p>
+<h2>Formas de Contacto</h2>
+<h3>1. E-mail</h3>
+<p>Para questões gerais, sugestões de conteúdo, parcerias ou suporte, pode enviar-nos um e-mail para:</p>
+<p><strong>geral@techmoz.com</strong></p>
+<p>Faremos o nosso melhor para responder a todas as mensagens o mais rapidamente possível, geralmente dentro de 24 a 48 horas úteis.</p>
+<h3>2. Redes Sociais</h3>
+<p>Siga-nos nas nossas redes sociais para ficar a par das últimas notícias, artigos e interagir com a nossa comunidade:</p>
+<ul>
+<li><strong>Facebook</strong>: <a href="https://facebook.com/techmoz">facebook.com/techmoz</a></li>
+<li><strong>Instagram</strong>: <a href="https://instagram.com/techmoz">instagram.com/techmoz</a></li>
+<li><strong>LinkedIn</strong>: <a href="https://linkedin.com/company/techmoz">linkedin.com/company/techmoz</a></li>
+<li><strong>X (Twitter)</strong>: <a href="https://twitter.com/techmoz">twitter.com/techmoz</a></li>
+</ul>
+<h3>3. Formulário de Contacto (Em Breve)</h3>
+<p>Estamos a trabalhar para disponibilizar um formulário de contacto direto no nosso website para facilitar ainda mais a sua comunicação connosco. Fique atento às atualizações!</p>
+<h2>Parcerias e Colaborações</h2>
+<p>Se representa uma empresa, startup ou é um criador de conteúdo e está interessado em estabelecer uma parceria ou colaboração com a TechMoz, por favor, contacte-nos através do e-mail <strong>parcerias@techmoz.com</strong>. Estamos abertos a explorar oportunidades que agreguem valor à nossa audiência e aos nossos parceiros.</p>
+<h2>Suporte Técnico</h2>
+<p>Para questões relacionadas com o funcionamento do website, problemas técnicos ou dificuldades de acesso ao conteúdo, por favor, envie um e-mail para <strong>suporte@techmoz.com</strong>.</p>
+<h2>Localização</h2>
+<p>A TechMoz é um portal digital com uma equipa distribuída. Não temos um escritório físico para atendimento ao público, mas estamos sempre online e prontos para o servir.</p>
+<p>Obrigado pelo seu interesse na TechMoz! Estamos ansiosos por ouvir de si.</p>
+    </div>
+</section>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+<section class="newsletter">
+    <h2>Faça parte do futuro</h2>
+    <p>Subscreva e receba as novidades da TechMoz assim que forem publicadas.</p>
+    <a href="index.html#noticias" class="newsletter-button">Ver todas as notícias →</a>
+</section>
 
-        <label for="assunto">Assunto</label>
-        <input type="text" id="assunto" name="assunto">
-
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
-
-        <button type="submit">Enviar mensagem</button>
-    </form>
-</div>
-
-<!-- FOOTER -->
 <footer id="sobre">
     <div class="footer-grid">
         <div class="footer-col">
@@ -107,5 +122,23 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+    // Este script será preenchido dinamicamente com o conteúdo do artigo
+    document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get('category');
+        const articleId = urlParams.get('id');
+
+        // Aqui você faria uma chamada para buscar o conteúdo do artigo com base no category e articleId
+        // Por enquanto, vamos usar um placeholder
+        document.getElementById('breadcrumb-category').innerText = category ? category.replace(/-/g, ' ') : 'Categoria';
+        document.getElementById('breadcrumb-category').href = category ? `${category}.html` : '#';
+        document.getElementById('breadcrumb-article').innerText = 'Título do Artigo';
+        document.getElementById('article-title').innerText = 'Título do Artigo Dinâmico';
+        document.getElementById('article-description').innerText = 'Descrição breve do artigo dinâmico.';
+        document.getElementById('article-date').innerText = '28 de Julho de 2026';
+        document.getElementById('article-body').innerHTML = '<p>Este é o conteúdo dinâmico do artigo. Em breve, cada artigo terá o seu conteúdo completo aqui.</p>';
+    });
+</script>
 </body>
 </html>

@@ -1,254 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="TechMoz — Portal de tecnologia, Inteligência Artificial, Cibersegurança, Smartphones, Carros, trabalho remoto e formas de ganhar dinheiro online.">
-<meta name="author" content="TechMoz">
-<title>TechMoz — Tecnologia e Rendimento Online</title>
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechMoz: O seu portal de tecnologia e rendimento online. Notícias, análises e oportunidades digitais para todos os públicos. Explore Inteligência Artificial, Computadores, Smartphones, Cibersegurança, Carros, Cursos e Certificações, Ganhar Dinheiro Online e Trabalho Remoto.">
+    <meta name="author" content="TechMoz">
+    <title>TechMoz — O seu portal de tecnologia e rendimento online</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<!-- HEADER -->
-<header>
-    <a href="index.html" class="logo">
-        <span class="logo-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 17V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"></path>
-                <path d="M2 17h20l-1.5 3a2 2 0 0 1-1.8 1.1H5.3A2 2 0 0 1 3.5 20L2 17z"></path>
-                <path d="M9 11l2 2 4-4"></path>
-            </svg>
-        </span>
-        TECH<span>MOZ</span>
-    </a>
-
-    <nav id="main-nav">
-        <a href="#">Início</a>
-        <a href="#categorias">Categorias</a>
-        <a href="#artigos">Artigos</a>
-        <a href="#noticias">Notícias</a>
-        <a href="#sobre">Sobre</a>
-    </nav>
-
-    <button
-        class="menu-toggle"
-        id="menu-button"
-        onclick="toggleMenu()"
-        aria-label="Abrir menu"
-        aria-expanded="false"
-        aria-controls="main-nav">
-        ☰
-    </button>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-    <h1>Tecnologia que <span>Gera Valor</span></h1>
-    <p>IA, cibersegurança, smartphones e as melhores formas de gerar rendimento online — tudo num só lugar.</p>
-    <a href="#categorias" class="hero-button">Explorar TechMoz</a>
-</section>
-
-<!-- CATEGORIAS -->
-<section class="section" id="categorias">
-    <div class="section-title">
-        <h2>Explore o TechMoz</h2>
-        <p>Tecnologia e oportunidades digitais, organizadas por área.</p>
-    </div>
-
-    <div class="categories">
-        <a href="ia.html" class="category-card">
-            <div class="icon" aria-hidden="true">🤖</div>
-            <h3>Inteligência Artificial</h3>
-            <p>Ferramentas, novidades e aplicações práticas da IA.</p>
-            <span class="card-cta">Explorar →</span>
+    <header>
+        <a href="index.html" class="logo">
+            <span class="logo-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 17V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"></path>
+                    <path d="M2 17h20l-1.5 3a2 2 0 0 1-1.8 1.1H5.3A2 2 0 0 1 3.5 20L2 17z"></path>
+                    <path d="M9 11l2 2 4-4"></path>
+                </svg>
+            </span>
+            TECH<span>MOZ</span>
         </a>
 
-        <a href="computadores.html" class="category-card">
-            <div class="icon" aria-hidden="true">💻</div>
-            <h3>Computadores</h3>
-            <p>Hardware, software e comparações para todos os orçamentos.</p>
-            <span class="card-cta">Explorar →</span>
-        </a>
+        <nav id="main-nav">
+            <a href="index.html">Início</a>
+            <a href="index.html#categorias">Categorias</a>
+            <a href="index.html#artigos">Artigos</a>
+            <a href="index.html#noticias">Notícias</a>
+            <a href="index.html#sobre">Sobre</a>
+        </nav>
 
-        <a href="ciberseguranca.html" class="category-card">
-            <div class="icon" aria-hidden="true">🛡️</div>
-            <h3>Cibersegurança</h3>
-            <p>Proteja os seus dados, dispositivos e contas online.</p>
-            <span class="card-cta">Explorar →</span>
-        </a>
+        <button
+            class="menu-toggle"
+            id="menu-button"
+            onclick="toggleMenu()"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="main-nav">
+            ☰
+        </button>
+    </header>
 
-        <a href="smartphones.html" class="category-card">
-            <div class="icon" aria-hidden="true">📱</div>
-            <h3>Smartphones</h3>
-            <p>Análises e comparações dos dispositivos mais recentes.</p>
-            <span class="card-cta">Explorar →</span>
-        </a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>O seu portal de tecnologia e rendimento online</h1>
+            <p>Notícias, análises e oportunidades digitais para todos os públicos. Explore as últimas tendências em IA, cibersegurança, smartphones, carros elétricos, e descubra como impulsionar a sua carreira e gerar rendimento online.</p>
+            <a href="#categorias" class="button">Explorar Categorias</a>
+        </div>
+    </section>
 
-        <a href="carros.html" class="category-card">
-            <div class="icon" aria-hidden="true">🚗</div>
-            <h3>Carros</h3>
-            <p>Tecnologia automóvel, elétricos e novidades do setor.</p>
-            <span class="card-cta">Explorar →</span>
-        </a>
+    <section id="categorias" class="section">
+        <h2>Categorias</h2>
+        <div class="category-grid">
+            <a href="ia.html" class="category-card">
+                <span class="category-icon" aria-hidden="true">🤖</span>
+                <h3>Inteligência Artificial</h3>
+                <p>Descubra o mundo da IA, desde os conceitos básicos às últimas inovações e aplicações práticas.</p>
+            </a>
+            <a href="computadores.html" class="category-card">
+                <span class="category-icon" aria-hidden="true">💻</span>
+                <h3>Computadores</h3>
+                <p>Guias de compra, manutenção, reviews de hardware e software para PCs e portáteis.</p>
+            </a>
+            <a href="smartphones.html" class="category-card">
+                <span class="category-icon" aria-hidden="true">📱</span>
+                <h3>Smartphones</h3>
+                <p>Análises, comparações e dicas para tirar o máximo partido do seu dispositivo móvel.</p>
+            </a>
+            <a href="ciberseguranca.html" class="category-card">
+                <span class="category-icon" aria-hidden="true">🛡️</span>
+                <h3>Cibersegurança</h3>
+                <p>Guias, dicas e notícias para proteger os seus dados, dispositivos e contas online.</p>
+            </a>
+            <a href="carros.html" class="category-card">
+                <span class="category-icon" aria-hidden="true">🚗</span>
+                <h3>Carros</h3>
+                <p>Análises, guias e notícias sobre o mundo automóvel, incluindo elétricos, híbridos e tecnologia autónoma.</p>
+            </a>
+            <a href="cursos-certificacoes.html" class="category-card">
+                <span class="category-icon" aria-hidden="true">🎓</span>
+                <h3>Cursos e Certificações</h3>
+                <p>Formação para desenvolver competências digitais e destacar-se no mercado de trabalho.</p>
+            </a>
+            <a href="ganhar-dinheiro-online.html" class="category-card">
+                <span class="category-icon" aria-hidden="true">💰</span>
+                <h3>Ganhar Dinheiro Online</h3>
+                <p>Estratégias e oportunidades para gerar rendimento na internet, desde freelancing a investimentos.</p>
+            </a>
+            <a href="trabalho-remoto.html" class="category-card">
+                <span class="category-icon" aria-hidden="true">🏠</span>
+                <h3>Trabalho Remoto</h3>
+                <p>Guias, dicas e recursos para profissionais e empresas que operam à distância.</p>
+            </a>
+        </div>
+    </section>
 
-        <a href="ganhar-dinheiro-online.html" class="category-card">
-            <div class="icon" aria-hidden="true">💼</div>
-            <h3>Ganhar Dinheiro Online</h3>
-            <p>Formas reais de gerar rendimento extra pela internet.</p>
-            <span class="card-cta">Explorar →</span>
-        </a>
+    <section id="artigos" class="section">
+        <h2>Artigos Recentes</h2>
+        <div class="content-grid">
+            <article class="content-card">
+                <span class="content-tag">IA</span>
+                <h3><a href="ia-o-que-e-e-como-funciona.html">Inteligência Artificial: O que é e como funciona?</a></h3>
+                <p>Uma introdução clara e concisa ao universo da IA, desmistificando conceitos e aplicações.</p>
+            </article>
+            <article class="content-card">
+                <span class="content-tag">COMPUTADORES</span>
+                <h3><a href="computadores-como-escolher-portatil.html">Como escolher o portátil ideal para as suas necessidades</a></h3>
+                <p>Um guia completo para o ajudar a tomar a melhor decisão na compra do seu próximo portátil.</p>
+            </article>
+            <article class="content-card">
+                <span class="content-tag">SMARTPHONES</span>
+                <h3><a href="smartphones-melhores-android-gama-media.html">Melhores smartphones Android de gama média em 2026</a></h3>
+                <p>Descubra os dispositivos que oferecem o melhor equilíbrio entre preço e desempenho.</p>
+            </article>
+            <article class="content-card">
+                <span class="content-tag">CIBERSEGURANÇA</span>
+                <h3><a href="ciberseguranca-guia-senhas-seguras.html">Guia completo de senhas seguras e gestores de passwords</a></h3>
+                <p>Aprenda a criar e gerir senhas fortes para proteger as suas contas online.</p>
+            </article>
+            <article class="content-card">
+                <span class="content-tag">CARROS</span>
+                <h3><a href="carros-eletricos-melhores-modelos.html">Carros Elétricos em 2026: Melhores modelos e autonomia</a></h3>
+                <p>Descubra os VEs mais promissores do mercado e o que esperar em termos de autonomia.</p>
+            </article>
+            <article class="content-card">
+                <span class="content-tag">CURSOS</span>
+                <h3><a href="cursos-certificacoes-melhores-plataformas-online.html">Melhores plataformas de cursos online para impulsionar a sua carreira</a></h3>
+                <p>Descubra as melhores plataformas para aprender e crescer profissionalmente.</p>
+            </article>
+            <article class="content-card">
+                <span class="content-tag">DINHEIRO ONLINE</span>
+                <h3><a href="ganhar-dinheiro-online-marketing-afiliados-guia.html">Marketing de Afiliados: Guia completo para iniciantes</a></h3>
+                <p>Aprenda a promover produtos e serviços e a ganhar comissões online.</p>
+            </article>
+            <article class="content-card">
+                <span class="content-tag">TRABALHO REMOTO</span>
+                <h3><a href="trabalho-remoto-vantagens-desafios.html">Trabalho Remoto: Vantagens e Desafios para Profissionais e Empresas</a></h3>
+                <p>Uma análise completa dos prós e contras do teletrabalho.</p>
+            </article>
+        </div>
+        <div class="section-cta">
+            <p>Mantenha-se atualizado com as últimas novidades e tendências.</p>
+            <a href="index.html#noticias" class="button">Ver todas as notícias →</a>
+        </div>
+    </section>
 
-        <a href="trabalho-remoto.html" class="category-card">
-            <div class="icon" aria-hidden="true">🌍</div>
-            <h3>Trabalho Remoto</h3>
-            <p>Oportunidades de emprego remoto e freelance no mundo digital.</p>
-            <span class="card-cta">Explorar →</span>
-        </a>
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <h2>Faça parte do futuro</h2>
+        <p>Subscreva e receba as novidades da TechMoz assim que forem publicadas.</p>
+        <a href="index.html#noticias" class="newsletter-button">Ver todas as notícias →</a>
+    </section>
 
-        <a href="noticias.html" class="category-card">
-            <div class="icon" aria-hidden="true">📰</div>
-            <h3>Notícias de Tecnologia</h3>
-            <p>As atualizações mais recentes do mundo tech.</p>
-            <span class="card-cta">Explorar →</span>
-        </a>
-
-        <a href="cursos-certificacoes.html" class="category-card">
-            <div class="icon" aria-hidden="true">🎓</div>
-            <h3>Cursos e Certificações</h3>
-            <p>Formação para desenvolver competências digitais.</p>
-            <span class="card-cta">Explorar →</span>
-        </a>
-
-        <a href="ferramentas-digitais.html" class="category-card">
-            <div class="icon" aria-hidden="true">⚙️</div>
-            <h3>Ferramentas Digitais</h3>
-            <p>Apps e serviços para ser mais produtivo todos os dias.</p>
-            <span class="card-cta">Explorar →</span>
-        </a>
-    </div>
-</section>
-
-<!-- CONTEÚDO EM DESTAQUE -->
-<section class="section featured" id="artigos">
-    <div class="section-title">
-        <h2>Conteúdo em Destaque</h2>
-        <p>Artigos e conteúdos selecionados pela TechMoz.</p>
-    </div>
-
-    <div class="article-grid">
-        <article class="article-card">
-            <div class="article-icon" aria-hidden="true">🤖</div>
-            <h3>O que é Inteligência Artificial?</h3>
-            <p>Uma introdução simples ao mundo da Inteligência Artificial e às suas aplicações.</p>
-            <a href="ia.html" class="read-more">Ler artigo →</a>
-        </article>
-
-        <article class="article-card">
-            <div class="article-icon" aria-hidden="true">🛡️</div>
-            <h3>Como proteger as suas contas online</h3>
-            <p>Conheça práticas importantes para melhorar a sua segurança digital.</p>
-            <a href="ciberseguranca.html" class="read-more">Ler artigo →</a>
-        </article>
-
-        <article class="article-card">
-            <div class="article-icon" aria-hidden="true">💻</div>
-            <h3>O futuro da tecnologia</h3>
-            <p>As tendências que estão a transformar a forma como vivemos e trabalhamos.</p>
-            <a href="noticias.html" class="read-more">Ler artigo →</a>
-        </article>
-    </div>
-</section>
-
-<!-- NOTÍCIAS -->
-<section class="section news-section" id="noticias">
-    <div class="section-title">
-        <h2>📰 Últimas Notícias de Tecnologia</h2>
-        <p>Acompanhe as principais novidades do mundo da tecnologia, Inteligência Artificial, cibersegurança e inovação.</p>
-    </div>
-
-    <div class="news-grid">
-        <article class="news-card">
-            <div class="news-image smartphone" role="img" aria-label="Smartphone moderno"></div>
-            <div class="news-content">
-                <span class="news-category">SMARTPHONES</span>
-                <div class="news-date">📅 24 Julho 2026</div>
-                <h3>O que observar antes de comprar um novo smartphone</h3>
-                <p>Desempenho, bateria, câmaras e armazenamento são alguns dos principais fatores que devem ser analisados antes de escolher um novo dispositivo.</p>
-                <a href="smartphones.html">Ler notícia →</a>
+    <!-- FOOTER -->
+    <footer id="sobre">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>TechMoz</h4>
+                <p>Portal de tecnologia e rendimento online. Notícias, análises e oportunidades digitais para todos os públicos.</p>
             </div>
-        </article>
 
-        <article class="news-card">
-            <div class="news-image ia" role="img" aria-label="Inteligência artificial"></div>
-            <div class="news-content">
-                <span class="news-category">INTELIGÊNCIA ARTIFICIAL</span>
-                <div class="news-date">📅 24 Julho 2026</div>
-                <h3>A Inteligência Artificial está a transformar a forma como trabalhamos</h3>
-                <p>As ferramentas de IA estão a criar novas possibilidades para estudantes, profissionais, empresas e criadores de conteúdo.</p>
-                <a href="ia.html">Ler notícia →</a>
+            <div class="footer-col">
+                <h4>Categorias</h4>
+                <ul>
+                    <li><a href="ia.html">Inteligência Artificial</a></li>
+                    <li><a href="ciberseguranca.html">Cibersegurança</a></li>
+                    <li><a href="ganhar-dinheiro-online.html">Ganhar Dinheiro Online</a></li>
+                    <li><a href="trabalho-remoto.html">Trabalho Remoto</a></li>
+                </ul>
             </div>
-        </article>
 
-        <article class="news-card">
-            <div class="news-image security" role="img" aria-label="Cibersegurança"></div>
-            <div class="news-content">
-                <span class="news-category">CIBERSEGURANÇA</span>
-                <div class="news-date">📅 24 Julho 2026</div>
-                <h3>A proteção dos dados tornou-se uma prioridade no mundo digital</h3>
-                <p>Senhas fortes, autenticação de dois fatores e atenção contra fraudes são importantes para proteger as contas online.</p>
-                <a href="ciberseguranca.html">Ler notícia →</a>
+            <div class="footer-col">
+                <h4>Portal</h4>
+                <ul>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos.html">Termos de Uso</a></li>
+                </ul>
             </div>
-        </article>
-    </div>
-</section>
-
-<!-- NEWSLETTER -->
-<section class="newsletter">
-    <h2>Faça parte do futuro</h2>
-    <p>A TechMoz está apenas a começar. Em breve teremos notícias, análises, tutoriais e muito mais.</p>
-    <a href="#noticias" class="newsletter-button">Explorar novidades →</a>
-</section>
-
-<!-- FOOTER -->
-<footer id="sobre">
-    <div class="footer-grid">
-        <div class="footer-col">
-            <h4>TechMoz</h4>
-            <p>Portal de tecnologia e rendimento online. Notícias, análises e oportunidades digitais para todos os públicos.</p>
         </div>
 
-        <div class="footer-col">
-            <h4>Categorias</h4>
-            <ul>
-                <li><a href="ia.html">Inteligência Artificial</a></li>
-                <li><a href="ciberseguranca.html">Cibersegurança</a></li>
-                <li><a href="ganhar-dinheiro-online.html">Ganhar Dinheiro Online</a></li>
-                <li><a href="trabalho-remoto.html">Trabalho Remoto</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <p>© 2026 TechMoz. Todos os direitos reservados.</p>
+            <p>Fundador: M. Chande</p>
         </div>
+    </footer>
 
-        <div class="footer-col">
-            <h4>Portal</h4>
-            <ul>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="privacidade.html">Política de Privacidade</a></li>
-                <li><a href="termos.html">Termos de Uso</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 TechMoz. Todos os direitos reservados.</p>
-        <p>Fundador: M. Chande</p>
-    </div>
-</footer>
-
-<!-- JAVASCRIPT MENU MOBILE -->
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
