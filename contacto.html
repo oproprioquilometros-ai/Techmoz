@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Entre em contacto com a equipa da TechMoz para parcerias, sugestões ou dúvidas.">
+<meta name="author" content="TechMoz">
+<title>Contacto — TechMoz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 17V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"></path>
+                <path d="M2 17h20l-1.5 3a2 2 0 0 1-1.8 1.1H5.3A2 2 0 0 1 3.5 20L2 17z"></path>
+                <path d="M9 11l2 2 4-4"></path>
+            </svg>
+        </span>
+        TECH<span>MOZ</span>
+    </a>
+
+    <nav id="main-nav">
+        <a href="index.html">Início</a>
+        <a href="index.html#categorias">Categorias</a>
+        <a href="index.html#artigos">Artigos</a>
+        <a href="index.html#noticias">Notícias</a>
+        <a href="index.html#sobre">Sobre</a>
+    </nav>
+
+    <button
+        class="menu-toggle"
+        id="menu-button"
+        onclick="toggleMenu()"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="main-nav">
+        ☰
+    </button>
+</header>
+
+<div class="breadcrumb"><a href="index.html">Início</a> / Contacto</div>
+
+<div class="contact-wrap">
+    <div class="contact-info">
+        <h1>Fale connosco</h1>
+        <p>Tem uma sugestão de artigo, uma proposta de parceria ou encontrou algum erro numa página? Escreva-nos — respondemos assim que possível.</p>
+        <ul>
+            <li>📧 geral@techmoz.co.mz</li>
+            <li>📍 Maputo, Moçambique</li>
+            <li>🕒 Resposta em 1 a 3 dias úteis</li>
+        </ul>
+    </div>
+
+    <form class="contact-form" action="mailto:geral@techmoz.co.mz" method="post" enctype="text/plain">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="assunto">Assunto</label>
+        <input type="text" id="assunto" name="assunto">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar mensagem</button>
+    </form>
+</div>
+
+<!-- FOOTER -->
+<footer id="sobre">
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>TechMoz</h4>
+            <p>Portal de tecnologia e rendimento online. Notícias, análises e oportunidades digitais para todos os públicos.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Categorias</h4>
+            <ul>
+                <li><a href="ia.html">Inteligência Artificial</a></li>
+                <li><a href="ciberseguranca.html">Cibersegurança</a></li>
+                <li><a href="ganhar-dinheiro-online.html">Ganhar Dinheiro Online</a></li>
+                <li><a href="trabalho-remoto.html">Trabalho Remoto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Portal</h4>
+            <ul>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="privacidade.html">Política de Privacidade</a></li>
+                <li><a href="termos.html">Termos de Uso</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 TechMoz. Todos os direitos reservados.</p>
+        <p>Fundador: M. Chande</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
