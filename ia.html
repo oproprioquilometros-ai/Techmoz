@@ -1,134 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Inteligência Artificial: guias, comparações de ferramentas e novidades sobre IA, explicados de forma simples.">
-<meta name="author" content="TechMoz">
-<title>Inteligência Artificial — TechMoz</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-    <a href="index.html" class="logo">
-        <span class="logo-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 17V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"></path>
-                <path d="M2 17h20l-1.5 3a2 2 0 0 1-1.8 1.1H5.3A2 2 0 0 1 3.5 20L2 17z"></path>
-                <path d="M9 11l2 2 4-4"></path>
-            </svg>
-        </span>
-        TECH<span>MOZ</span>
+<article class="post-content">
+  <nav class="breadcrumb">
+    <a href="index.html">Início</a> / 
+    <span>Inteligência Artificial</span>
+  </nav>
+
+  <div style="text-align: center; margin-bottom: 40px;">
+    <span style="font-size: 3rem;">🤖</span>
+    <h1>Inteligência Artificial</h1>
+    <p class="intro" style="max-width: 700px; margin: 0 auto; font-size: 1.1rem; color: #475569;">
+      A Inteligência Artificial deixou de ser ficção científica para se tornar a ferramenta mais poderosa de produtividade e criação de riqueza da nossa geração. Nesta secção, o <strong>TechMoz</strong> desmistifica a IA: sem jargão técnico complicado, focamo-nos em ferramentas, novidades e aplicações práticas para o seu dia a dia e para o seu trabalho.
+    </p>
+  </div>
+
+  <div class="articles-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px;">
+    
+    <a href="ia-o-que-e.html" class="article-card" style="border:1px solid #e2e8f0; border-radius:8px; padding:20px; text-decoration:none; color:inherit; transition: transform 0.2s;">
+      <span class="category-tag" style="background:#e0f2fe; color:#0369a1; font-size:0.75rem; padding:4px 8px; border-radius:4px;">GUIA</span>
+      <h3 style="margin-top:10px;">O que é Inteligência Artificial?</h3>
+      <p style="color:#64748b; font-size:0.9rem;">Uma introdução simples aos conceitos de IA, como funcionam os modelos e as suas aplicações no mundo real.</p>
+      <span style="color:#0ea5e9; font-weight:bold; display:block; margin-top:10px;">Ler mais →</span>
     </a>
 
-    <nav id="main-nav">
-        <a href="index.html">Início</a>
-        <a href="index.html#categorias">Categorias</a>
-        <a href="index.html#artigos">Artigos</a>
-        <a href="index.html#noticias">Notícias</a>
-        <a href="index.html#sobre">Sobre</a>
-    </nav>
+    <a href="ia-assistentes.html" class="article-card" style="border:1px solid #e2e8f0; border-radius:8px; padding:20px; text-decoration:none; color:inherit;">
+      <span class="category-tag" style="background:#f3e8ff; color:#7e22ce; font-size:0.75rem; padding:4px 8px; border-radius:4px;">COMPARAÇÃO</span>
+      <h3 style="margin-top:10px;">Assistentes de IA: como escolher</h3>
+      <p style="color:#64748b; font-size:0.9rem;">ChatGPT, Claude ou Gemini? Descubra os pontos fortes de cada um e qual usar para as suas tarefas diárias.</p>
+      <span style="color:#0ea5e9; font-weight:bold; display:block; margin-top:10px;">Ler mais →</span>
+    </a>
 
-    <button
-        class="menu-toggle"
-        id="menu-button"
-        onclick="toggleMenu()"
-        aria-label="Abrir menu"
-        aria-expanded="false"
-        aria-controls="main-nav">
-        ☰
-    </button>
-</header>
-<div class="breadcrumb"><a href="index.html">Início</a> / Inteligência Artificial</div><section class="page-hero">
-    <div class="page-icon" aria-hidden="true">🤖</div>
-    <h1>Inteligência Artificial</h1>
-    <p>Ferramentas, novidades e aplicações práticas da IA no dia a dia e no trabalho.</p>
-</section>
-<section class="section">
-    <div class="content-grid">
-        <a href="ia-o-que-e.html" class="content-card">
-            <span class="content-tag">GUIA</span>
-            <h3>O que é Inteligência Artificial?</h3>
-            <p>Uma introdução simples aos conceitos de IA e às suas aplicações.</p>
-            <span class="card-cta">Ler mais →</span>
-        </a>
-        <a href="ia-assistentes.html" class="content-card">
-            <span class="content-tag">COMPARAÇÃO</span>
-            <h3>Assistentes de IA: como escolher</h3>
-            <p>Os principais assistentes de IA têm pontos fortes diferentes.</p>
-            <span class="card-cta">Ler mais →</span>
-        </a>
-        <a href="ia-produtividade.html" class="content-card">
-            <span class="content-tag">PRODUTIVIDADE</span>
-            <h3>IA no trabalho</h3>
-            <p>Formas práticas de usar ferramentas de IA para poupar tempo.</p>
-            <span class="card-cta">Ler mais →</span>
-        </a>
-        <a href="ia-machine-learning.html" class="content-card">
-            <span class="content-tag">EDUCAÇÃO</span>
-            <h3>Machine Learning explicado</h3>
-            <p>Os conceitos básicos de aprendizagem automática, sem jargão técnico.</p>
-            <span class="card-cta">Ler mais →</span>
-        </a>
-        <a href="ia-etica.html" class="content-card">
-            <span class="content-tag">OPINIÃO</span>
-            <h3>Os desafios da IA responsável</h3>
-            <p>Privacidade, viés e transparência no debate sobre IA.</p>
-            <span class="card-cta">Ler mais →</span>
-        </a>
-        <a href="ia-ferramentas.html" class="content-card">
-            <span class="content-tag">FERRAMENTAS</span>
-            <h3>Ferramentas de IA para experimentar</h3>
-            <p>Uma seleção de aplicações de IA que valem a pena conhecer.</p>
-            <span class="card-cta">Ler mais →</span>
-        </a>
-    </div>
+    <a href="ia-produtividade.html" class="article-card" style="border:1px solid #e2e8f0; border-radius:8px; padding:20px; text-decoration:none; color:inherit;">
+      <span class="category-tag" style="background:#dcfce7; color:#15803d; font-size:0.75rem; padding:4px 8px; border-radius:4px;">PRODUTIVIDADE</span>
+      <h3 style="margin-top:10px;">IA no trabalho</h3>
+      <p style="color:#64748b; font-size:0.9rem;">Formas práticas e prompts prontos para usar ferramentas de IA e poupar horas no seu expediente.</p>
+      <span style="color:#0ea5e9; font-weight:bold; display:block; margin-top:10px;">Ler mais →</span>
+    </a>
 
-    <div class="section-cta">
-        <p>Estamos sempre a acompanhar as novidades da IA. Volte em breve para mais conteúdo.</p>
-        <a href="index.html#categorias">← Ver todas as categorias</a>
-    </div>
-</section>
-<!-- NEWSLETTER -->
-<section class="newsletter">
-    <h2>Faça parte do futuro</h2>
-    <p>Subscreva e receba as novidades da TechMoz assim que forem publicadas.</p>
-    <a href="index.html#noticias" class="newsletter-button">Ver todas as notícias →</a>
-</section>
-<!-- FOOTER -->
-<footer id="sobre">
-    <div class="footer-grid">
-        <div class="footer-col">
-            <h4>TechMoz</h4>
-            <p>Portal de tecnologia e rendimento online. Notícias, análises e oportunidades digitais para todos os públicos.</p>
-        </div>
+    <a href="ia-machine-learning.html" class="article-card" style="border:1px solid #e2e8f0; border-radius:8px; padding:20px; text-decoration:none; color:inherit;">
+      <span class="category-tag" style="background:#fef9c3; color:#a16207; font-size:0.75rem; padding:4px 8px; border-radius:4px;">EDUCAÇÃO</span>
+      <h3 style="margin-top:10px;">Machine Learning explicado</h3>
+      <p style="color:#64748b; font-size:0.9rem;">Os conceitos básicos de aprendizagem automática, explicados sem jargão técnico para qualquer pessoa entender.</p>
+      <span style="color:#0ea5e9; font-weight:bold; display:block; margin-top:10px;">Ler mais →</span>
+    </a>
 
-        <div class="footer-col">
-            <h4>Categorias</h4>
-            <ul>
-                <li><a href="ia.html">Inteligência Artificial</a></li>
-                <li><a href="ciberseguranca.html">Cibersegurança</a></li>
-                <li><a href="ganhar-dinheiro-online.html">Ganhar Dinheiro Online</a></li>
-                <li><a href="trabalho-remoto.html">Trabalho Remoto</a></li>
-            </ul>
-        </div>
+    <a href="ia-etica.html" class="article-card" style="border:1px solid #e2e8f0; border-radius:8px; padding:20px; text-decoration:none; color:inherit;">
+      <span class="category-tag" style="background:#ffe4e6; color:#be123c; font-size:0.75rem; padding:4px 8px; border-radius:4px;">OPINIÃO</span>
+      <h3 style="margin-top:10px;">Os desafios da IA responsável</h3>
+      <p style="color:#64748b; font-size:0.9rem;">Privacidade, viés algorítmico e transparência: o debate essencial sobre o futuro da tecnologia.</p>
+      <span style="color:#0ea5e9; font-weight:bold; display:block; margin-top:10px;">Ler mais →</span>
+    </a>
 
-        <div class="footer-col">
-            <h4>Portal</h4>
-            <ul>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="privacidade.html">Política de Privacidade</a></li>
-                <li><a href="termos.html">Termos de Uso</a></li>
-            </ul>
-        </div>
-    </div>
+    <a href="ia-ferramentas.html" class="article-card" style="border:1px solid #e2e8f0; border-radius:8px; padding:20px; text-decoration:none; color:inherit;">
+      <span class="category-tag" style="background:#e0e7ff; color:#4338ca; font-size:0.75rem; padding:4px 8px; border-radius:4px;">FERRAMENTAS</span>
+      <h3 style="margin-top:10px;">Ferramentas de IA para experimentar</h3>
+      <p style="color:#64748b; font-size:0.9rem;">Uma seleção curada de aplicações de IA (gratuitas e pagas) que valem a pena conhecer e testar hoje.</p>
+      <span style="color:#0ea5e9; font-weight:bold; display:block; margin-top:10px;">Ler mais →</span>
+    </a>
 
-    <div class="footer-bottom">
-        <p>© 2026 TechMoz. Todos os direitos reservados.</p>
-        <p>Fundador: M. Chande</p>
-    </div>
-</footer>
-<script src="script.js"></script>
-</body>
-</html>
+  </div>
+
+  <div class="cta-box" style="background:linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding:30px; border-radius:12px; text-align:center; margin-top:40px; border:1px solid #bae6fd;">
+    <h3 style="margin-bottom:10px;">🚀 Não fique para trás na revolução da IA</h3>
+    <p style="color:#475569; margin-bottom:20px;">Nós testamos as ferramentas para que você não perca tempo. Subscreva a Newsletter do TechMoz e receba semanalmente as melhores dicas, prompts e novidades de IA diretamente no seu e-mail.</p>
+    <form action="#" method="POST" style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+      <input type="email" placeholder="O seu melhor e-mail" required style="padding:12px; width:300px; max-width:100%; border:1px solid #cbd5e1; border-radius:6px;">
+      <button type="submit" style="padding:12px 24px; background:#0284c7; color:white; border:none; border-radius:6px; cursor:pointer; font-weight:bold;">Quero entrar no futuro</button>
+    </form>
+  </div>
+
+  <p style="text-align:center; margin-top:30px; color:#64748b;">Estamos sempre a acompanhar as novidades da IA. Volte em breve para mais conteúdo.</p>
+  <p style="text-align:center;"><a href="index.html#categorias" style="color:#0ea5e9; text-decoration:none; font-weight:bold;">← Ver todas as categorias</a></p>
+</article>
